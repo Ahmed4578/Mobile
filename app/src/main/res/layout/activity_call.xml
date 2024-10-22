@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Call">
+
+    <TextView
+        android:id="@+id/contact_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:text="nom 1"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/contact_id"
+        app:layout_constraintTop_toTopOf="@+id/contact_id" />
+
+    <TextView
+        android:id="@+id/contact_number"
+        style="@style/st_titre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:text="120"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/contact_pseudo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/contact_number"
+        app:srcCompat="@drawable/vec_call" />
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/btnCall"
+        app:layout_constraintTop_toTopOf="@id/contact_number"
+        app:srcCompat="@drawable/vec_delete" />
+
+</LinearLayout>

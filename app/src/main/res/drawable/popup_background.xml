@@ -1,0 +1,8 @@
+<androidx.cardview.widget.CardView android:id="@+id/popup_container"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+</androidx.cardview.widget.CardView>
